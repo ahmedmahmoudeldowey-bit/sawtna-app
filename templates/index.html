@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}الرئيسية - صوتنا{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 40px 0;">
+    <h1 style="color: #2c3e50;">🎙️ أهلاً بك في منصة صوتنا الإلكترونية</h1>
+    <p style="font-size: 18px; color: #7f8c8d; margin-bottom: 30px;">المنصة البرمجية التفاعلية الخاصة بك لإدارة الحسابات والغرف المباشرة.</p>
+    
+    <div style="display: flex; gap: 20px; justify-content: center; max-width: 400px; margin: 0 auto;">
+        <a href="/login" style="text-decoration: none; flex: 1;"><button class="btn">تسجيل الدخول</button></a>
+        <a href="/register" style="text-decoration: none; flex: 1;"><button class="btn" style="background-color: #34495e;">إنشاء حساب</button></a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}تسجيل الدخول - صوتنا{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">تسجيل الدخول إلى حسابك</h2>
+
+<form method="POST" action="/login">
+    <div class="form-group">
+        <label for="username">اسم المستخدم:</label>
+        <input type="text" id="username" name="username" placeholder="أدخل اسم المستخدم الخاص بك" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password" placeholder="أدخل كلمة المرور" required>
+    </div>
+    
+    <button type="submit" class="btn" style="margin-top: 15px;">دخول 🔓</button>
+</form>
+
+<p style="text-align: center; margin-top: 20px;">
+    ليس لديك حساب؟ <a href="/register" style="color: #1abc9c; text-decoration: none; font-weight: bold;">اضغط هنا لإنشاء حساب جديد</a>
+</p>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}إنشاء حساب جديد - صوتنا{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">تسجيل حساب جديد بالمنصة</h2>
+
+<form method="POST" action="/register">
+    <div class="form-group">
+        <label for="username">اسم المستخدم الجديد:</label>
+        <input type="text" id="username" name="username" placeholder="اختر اسم مستخدم فريد (English)" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="password">كلمة المرور:</label>
+        <input type="password" id="password" name="password" placeholder="اكتب كلمة مرور قوية" required>
+    </div>
+    
+    <button type="submit" class="btn" style="background-color: #34495e; margin-top: 15px;">تأكيد وإنشاء الحساب ✨</button>
+</form>
+
+<p style="text-align: center; margin-top: 20px;">
+    لديك حساب بالفعل؟ <a href="/login" style="color: #1abc9c; text-decoration: none; font-weight: bold;">سجل دخولك من هنا</a>
+</p>
+{% endblock %}
